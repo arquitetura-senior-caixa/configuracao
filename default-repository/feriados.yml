@@ -1,0 +1,10 @@
+server:
+  port: 8025
+
+senior:
+  integrator:
+    integrations:
+      - type: FERIADOS
+        input-directory: file:integrations\feriados\src\test\resources\inputFiles\feriados
+        scheduled-times:
+          - '16:12'

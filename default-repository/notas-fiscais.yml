@@ -1,0 +1,18 @@
+server:
+  port: 8027
+
+senior:
+  integrator:
+    integrations:
+      - type: NOTAS_FISCAIS
+        input-directory: file:.integration-files/notasFiscais
+    notas-fiscais:
+      request-size: 5
+      ws-fornecedores:
+        url: http://teste175:28080/g5-senior-services/sapiens_Synccom_senior_g5_co_ger_cad_fornecedores
+        read-timeout-seconds: 99999
+        connection-timeout-seconds: 99999
+      ws-nota-fiscal:
+        url: http://teste175:28080/g5-senior-services/sapiens_Synccom_senior_g5_co_mcm_cpr_notafiscal
+        read-timeout-seconds: 99999
+        connection-timeout-seconds: 99999

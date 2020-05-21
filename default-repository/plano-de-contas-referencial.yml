@@ -1,0 +1,16 @@
+server:
+  port: 8024
+
+senior:
+  integrator:
+    integrations:
+      - type: PLANO_DE_CONTAS_REFERENCIAL
+        input-directory: file:.integration-files/planoDeContasReferencialSimplificado
+    plano-de-contas-referencial:
+      default-plano-origem: 1
+      default-plano-destino: 3
+      defaultCentroDeCusto: 0
+      defaultCentroDeCustoReduzido: 0
+      defaultNaturezaSubconta: 0
+      defaultPercentualDeRateio: 0
+      defaultTipoDeConta: A

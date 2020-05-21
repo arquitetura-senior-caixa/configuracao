@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: ${caixa.fsw.integration.properties-server.profile:native}
+  cloud:
+    config:
+      server:
+        native:
+          search-locations:
+            - ${caixa.fsw.integration.properties-server.config.location:classpath:default-repository}

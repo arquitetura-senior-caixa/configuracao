@@ -1,0 +1,5 @@
+server.port: 8026
+
+senior.integrator.integrations:
+  - type: SERVICOS_TOMADOS
+    input-directory: file:.integration-files/servicos-tomados

@@ -1,0 +1,12 @@
+server.port: 8026
+
+senior:
+  integrator:
+    integrations:
+      - type: RECOLHIMENTOS_ISS
+        output-directory: file:.integration-files/recolhimentos-iss/
+        scheduled-times:
+          - '0 */10 * * * *'
+    recolhimentos-iss:
+      lista-tipo-imposto:
+        - 2

@@ -1,0 +1,10 @@
+server:
+  port: 8024
+
+senior:
+  integrator:
+    integrations:
+      - type: LANCAMENTO_APURACAO_IMPOSTOS
+        output-directory: file:.integration-files/lancamentoApuracaoImpostos/
+    lancamento-apuracao-impostos:
+      origem-lancamento-padrao: abc

@@ -1,0 +1,13 @@
+server.port: 8026
+
+senior:
+  integrator:
+    integrations:
+      - type: RECOLHIMENTOS_FEDERAIS
+        output-directory: file:.integration-files/recolhimentos-federais/
+        scheduled-times:
+          - '0 */10 * * * *'
+    recolhimentos-federais:
+      numero-sequencial-unico: 5
+      lista-tipo-imposto:
+        - 1

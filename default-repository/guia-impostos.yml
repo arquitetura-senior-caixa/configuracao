@@ -1,0 +1,10 @@
+server:
+  port: 8025
+
+senior:
+  integrator:
+    integrations:
+      - type: IMPOSTOS_FEDERAIS
+        input-directory: file:.integration-files/impostosFederais
+      - type: IMPOSTOS_MUNICIPAIS
+        input-directory: file:.integration-files/impostosMunicipais

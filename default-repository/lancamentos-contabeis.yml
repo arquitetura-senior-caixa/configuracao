@@ -1,0 +1,25 @@
+server:
+  port: 8025
+
+spring:
+  jpa:
+    database: default
+
+senior:
+  integrator:
+    integrations:
+      - type: LANCAMENTOS_CONTABEIS
+        input-directory: file:.integration-files/lancamentosContabeis
+        scheduled-times:
+          - '12:30'
+    lancamentos-contabeis:
+      datasource:
+        jdbc-url: jdbc:oracle:thin:@teste167:1521:XE
+        username: integracao
+        password: '{cipher}de7a9fda87c0da29d673ea7a427da30dcfb3d75caca07cb5a445ff4d02dd2205'
+      codigoModeloPlanoDeContas: 1
+      novo-lancamento-contabil:
+        codigoEmpresa: 1
+        codigoFilial: 1
+        codigoHistoricoPadrao: 1
+        complementoLancamento: Complemento

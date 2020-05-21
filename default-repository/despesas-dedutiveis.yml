@@ -1,0 +1,10 @@
+server:
+  port: 8024
+
+senior:
+  integrator:
+    integrations:
+      - type: DESPESAS_DEDUTIVEIS
+        input-directory: file:integrations\despesas-dedutíveis\src\test\resources\inputFiles\despesasDedutiveisSiapc
+      - type: DESPESAS_DEDUTIVEIS_SIJUR
+        input-directory: file:integrations\despesas-dedutíveis\src\test\resources\inputFiles\despesasDedutiveisSijur

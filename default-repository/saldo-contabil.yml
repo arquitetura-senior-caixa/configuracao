@@ -1,0 +1,24 @@
+server:
+  port: 8023
+
+senior:
+  integrator:
+    saldo-contabil:
+      modelo-plano-contas: 10
+      codFil: 1
+      codEmp: 9997
+      product: 9996
+      wsGerarlotectb:
+        oriLot: Origem do lote
+        desLot: Destino do lote
+        url: http://teste175:28080/g5-senior-services/sapiens_Synccom_senior_g5_co_mct_ctb_gerarlotectb
+      wsImportacaolctctb:
+        codHpd: 1
+        oriLct: Origem do lancamento
+        cplLct: Complemento do lancamento
+        url: http://teste175:28080/g5-senior-services/sapiens_Synccom_senior_g5_co_mct_ctb_importacaolctctb
+      wsProcessarlotectb:
+        url: http://teste175:28080/g5-senior-services/sapiens_Synccom_senior_g5_co_mct_ctb_processarlotectb
+    integrations:
+      - type: SALDO_CONTABIL
+        input-directory: file://TESTE309/Senior/Integracoes/input-files/saldo-contabil

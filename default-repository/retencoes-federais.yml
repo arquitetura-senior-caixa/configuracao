@@ -1,0 +1,18 @@
+server:
+  port: 8024
+
+senior:
+  integrator:
+    integrations:
+      - type: RETENCOES_FEDERAIS
+        input-directory: file:.integration-files/retencoesFederais
+    retencoes-federais:
+      request-size: 5
+      ws-clientes:
+        url: http://teste175:28080/g5-senior-services/sapiens_Synccom_senior_g5_co_ger_cad_clientes
+        read-timeout-seconds: 99999
+        connection-timeout-seconds: 99999
+      ws-outros:
+        url: http://teste175:28080/g5-senior-services/sapiens_Synccom_senior_g5_co_mct_imp_gravaroutrosdocumentos
+        read-timeout-seconds: 99999
+        connection-timeout-seconds: 99999

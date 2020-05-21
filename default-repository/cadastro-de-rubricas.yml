@@ -1,0 +1,5 @@
+server.port: 8026
+
+senior.integrator.integrations:
+  - type: CADASTRO_DE_RUBRICAS
+    input-directory: file:.integration-files/cadastroRubricas

@@ -1,0 +1,8 @@
+server:
+  port: 8021
+
+spring:
+  security:
+    user:
+      name: ${caixa.fsw.integration.properties-server.security.username:senior}
+      password: ${caixa.fsw.integration.properties-server.security.password:$2a$10$wq4tu/YUABKqRDPXW6K6SOPo8aKzzG0vBWW1Cst.N0nX.Y8T.jiMC}

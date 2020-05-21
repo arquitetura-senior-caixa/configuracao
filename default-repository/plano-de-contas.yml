@@ -1,0 +1,20 @@
+server:
+  port: 8022
+
+senior:
+  integrator:
+    integrations:
+      - type: PLANO_DE_CONTAS
+        input-directory: file:.integration-files/planoDeContasSimplificado
+        scheduled-times:
+            - '16:12'
+      - type: PLANO_DE_CONTAS_ENTIDADE
+        input-directory: file:.integration-files/planoDeContasSimplificado/entidade
+    plano-de-contas:
+      default-cod-mpc: 123
+      default-for-rat: 0
+      batch-size: 5
+      ws-modelo-de-plano:
+        url: http://teste175:28080/g5-senior-services/sapiens_Synccom_senior_g5_co_ger_cad_ModeloPlano
+        read-timeout-seconds: 99999
+        connection-timeout-seconds: 99999
